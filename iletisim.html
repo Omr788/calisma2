@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+</head>
+
+<body>
+
+
+
+    <header>
+        <nav>
+            <a href="index.html">Ana Sayfa | </a>
+            <a href="hakkimda.html">Hakkımda | </a>
+            <a href="hobilerim.html">Hobilerim |</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+        <h1>İletişim</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset style="border-radius: 20px; border: 2.5px solid black;">
+                <legend style="font-weight: bold;">İletişim Formu</legend>
+                <p>
+                    <label for="adsoyad">Ad Soyad: </label><br>
+                    <input type="text" name="adsoyad" id="adsoyad" placeholder="Caner Güler" required>
+                </p>
+
+                <p>
+                    <label for="yas">Yaşınız: </label><br>
+                    <input type="number" name="yas" id="yas" placeholder="Yaşınızı seçiniz">
+                </p>
+
+                <p>
+                    <label for="eposta">E-mailiniz: </label><br>
+                    <input type="email" name="eposta" id="eposta" placeholder="Ornek@gmail.com" required>
+                </p>
+
+                <p>
+                    <label for="konu">Konu Seçiniz: </label><br>
+                    <select name="konu" id="konu">
+                        <option value="">--Birini Seçiniz--</option>
+                        <optgroup label="Konular">
+                            <option value="">Hata Bildirimi</option>
+                            <option value="">Genel Soru</option>
+                            <option value="">Fizik ve astronomi</option>
+                            <option value="">Bilim hakkında görüş</option>
+                            <option value="">Web sitesi hakkında öneri</option>
+                            <option value="">Diğer</option>
+                        </optgroup>
+
+                    </select><br>
+                </p>
+
+                <p>
+                    <label for="mesaj">Mesajınız: </label><br>
+                    <textarea name="mesaj" id="mesaj" rows="5" required placeholder="Mesajınızı buraya yazınız..."
+                        maxlength="500"></textarea>
+                </p>
+
+                <p>
+                    <label for="arama">Web Sitemi Nasıl Buldunuz?</label><br>
+                    <input type="radio" name="ulasim" id="arama" value="arama">
+                    <label for="arama">Arama Motoru</label><br>
+
+                    <input type="radio" name="ulasim" id="arkadas" value="arkadas">
+                    <label for="arkadas">Arkadaş Çevremden</label><br>
+
+                    <input type="radio" name="ulasim" id="sosyal" value="sosyal">
+                    <label for="sosyal">Sosyal Medya</label><br>
+
+                    <input type="radio" name="ulasim" id="diger" value="diger">
+                    <label for="diger">Diğer</label>
+                </p>
+
+                <p>
+                    <label for="tarih">Tarih: </label><br>
+                    <input type="date" name="tarih" id="tarih">
+                </p>
+                
+
+                <input type="submit" value="Gönder">
+                <input type="reset" value="Temizle">
+            </fieldset>
+        </form>
+
+    </main>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
